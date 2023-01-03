@@ -1,0 +1,36 @@
+site_name: Live de Python
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+  palette:
+  - scheme: default
+    primary: purple
+    toggle: 
+      icon: material/weather-night
+      name: Modo noturno
+  - scheme: slate
+    primary: deep purple
+    toggle:
+      icon: material/weather-sunny
+      name: Modo claro
+  
+
+# nav:
+  # - Index: index.md
+  # - Dois: pagina_2.md
+  # - hotdog: cachorro_hotdog/cachorro_hotdog_index.md
+
+
+markdown_extensions: 
+  - pymdownx.tasklist  # Lista de tarefas
+  - pymdownx.emoji  # Emojis
+  - pymdownx.mark  # Realçado
+  - pymdownx.tilde  # Trachado
+  - pymdownx.highlight # Hightlight
+  - pymdownx.superfences: 
+      custom_fences:
+        - name: mermaid                   
+          class: mermaid 
+          format: !!python/name:pymdownx.superfences.fence_code_format
